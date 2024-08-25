@@ -38,7 +38,7 @@ const Home = () => {
   return (
     <>
       <Row gutter={16} align="middle" justify="center">
-        <Col xs={24} sm={12} md={8}>
+        <Col xs={24} sm={12} md={8} className="home-col">
           <Image
             alt="rakshithgowdakv"
             width="100%"

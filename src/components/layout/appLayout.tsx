@@ -8,7 +8,7 @@ import {
   MenuFoldOutlined,
   MenuUnfoldOutlined,
 } from "@ant-design/icons";
-import { Outlet, useNavigate } from "react-router-dom";
+import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import type { MenuInfo } from "rc-menu/lib/interface";
 import { MenuDetail } from "./appLayoutType";
 
@@ -25,6 +25,7 @@ const AppLayout = () => {
   const [collapsed, setCollapsed] = useState(true);
   const navigate = useNavigate();
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const location = useLocation();
 
   const handleMenuClick = (e: MenuInfo) => {
     navigate(menuDetail[e.key]);
@@ -41,6 +42,10 @@ const AppLayout = () => {
     };
   }, []);
 
+  const defaultSelectedKey = Object.keys(menuDetail).find(
+    (key) => menuDetail[key] === (location.pathname == "/" ? "/": location.pathname.replace("/", ""))
+  );
+
   return (
     <Layout style={{ minHeight: "100vh" }}>
       {isMobile ? (
@@ -49,7 +54,7 @@ const AppLayout = () => {
           <Menu
             theme="dark"
             mode="horizontal"
-            defaultSelectedKeys={["2"]}
+            defaultSelectedKeys={[defaultSelectedKey || "0"]}
             onClick={handleMenuClick}
             items={[
               {
@@ -80,7 +85,7 @@ const AppLayout = () => {
             theme="dark"
             mode="inline"
             className="side-menu"
-            defaultSelectedKeys={["1"]}
+            defaultSelectedKeys={[defaultSelectedKey || "0"]}
             onClick={handleMenuClick}
             items={[
               {

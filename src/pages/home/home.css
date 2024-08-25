@@ -1,47 +1,52 @@
 #profileId {
-    border-radius: 50%;
-    width: 200px !important;
-    height: 200px !important;
+  border-radius: 50%;
+  width: 200px !important;
+  height: 200px !important;
+}
+.home-col {
+  display: flex;
+  justify-content: center;
+}
+#ownerName {
+  font-weight: bold;
+}
+#summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.connectIcon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.skills-section {
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .connectIcon {
+    font-size: 18px;
   }
-  
+
+  .skillList {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
   #summary {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    text-align: center;
   }
-  
+
   .social-icons {
+    display: flex;
+    justify-content: center;
     margin-top: 10px;
   }
-  
-  .connectIcon {
-    font-size: 20px;
-    margin-right: 10px;
-  }
-  
-  .skills-section {
-    padding: 20px;
-  }
-  
-  @media (max-width: 768px) {
-    .connectIcon {
-      font-size: 18px;
-    }
-  
-    .skillList {
-      margin-bottom: 20px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    #summary {
-      text-align: center;
-    }
-  
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      margin-top: 10px;
-    }
-  }
-  
+}
