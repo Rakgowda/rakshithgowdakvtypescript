@@ -14,6 +14,7 @@ const Project = () => {
               className="project-card"
               cover={
                 <img
+                alt={project.imgSrc}
                   src={require("../../image/projectImage/" + project.imgSrc)}
                 />
               }
