@@ -1,0 +1,40 @@
+.project-card {
+  width: 250px;
+  min-height: 350px;
+  max-height: 350px;
+  overflow: "hidden";
+  margin: 5px;
+}
+
+.project-card img {
+  min-height: 150px;
+  max-height: 150px;
+}
+
+.project-container {
+    padding: 16px;
+  }
+  
+  .project-card {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .project-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  
+  @media (max-width: 768px) {
+    .project-card {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .project-card {
+      font-size: 12px;
+    }
+  }
+  

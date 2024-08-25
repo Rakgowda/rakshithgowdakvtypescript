@@ -1,0 +1,48 @@
+.side-panel {
+  background: #001529;
+}
+
+.logo {
+  height: 64px;
+  padding: 16px;
+  text-align: center;
+  background: #001529;
+}
+
+.side-menu {
+  height: calc(100% - 64px);
+  overflow: auto;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  background: #001529;
+  color: white;
+  height: 64px;
+}
+
+.trigger {
+  font-size: 20px;
+  line-height: 64px;
+  cursor: pointer;
+}
+
+.spinner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    padding: 0 16px;
+  }
+
+  .trigger {
+    font-size: 18px;
+  }
+}

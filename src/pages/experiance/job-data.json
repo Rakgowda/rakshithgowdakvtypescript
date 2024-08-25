@@ -1,0 +1,53 @@
+[
+    {
+      "title": "Bamboorose",
+      "subTitle": "Senior Software Engineer in React js",
+      "from": "10/2021",
+      "to": "present",
+      "achievement": [
+        "Developed B2B React applications using Redux state management and RESTful APIs.",
+        "Converted JSP screen into React screen with REST API.",
+        "Optimized performance of existing React applications by utilizing best practices such as code splitting and lazy loading.",
+        "Developed and maintained REST APIs for web applications using Java.",
+        "Managed source control system Git when working on collaborative teams building out complex React applications.",
+        "Worked closely with product owners on requirements gathering, design decisions, and implementation strategies for new features in a React application.",
+        "Built reusable UI components that can be used across multiple projects with React.",
+        "Utilized Agile methodologies to manage project timelines and deliverables efficiently.",
+        "Researched new technologies and methodologies to propose innovative software solutions.",
+        "Mentored junior staff members in coding best practices and problem-solving techniques."
+      ],
+      "technologies" : ["React.js","Redux","TypeScript","Jest","React Testing Library", "Kendo UI", "Webpack","Nx"]
+    },
+    {
+      "title": "Infosys",
+      "subTitle": "Software Engineer",
+      "from": "08/2019",
+      "to": "10/2021",
+      "achievement": [
+        "Developed and maintained a high-traffic E-Banking platform using Polymer.js and Materialize CSS.",
+        "Identified web-based user interactions and developed highly responsive user interface components via Polymer concepts.",
+        "Integrated web applications with back-end systems using RESTful APIs.",
+        "Optimized existing user interface designs to improve usability and accessibility.",
+        "Managed version control and project tracking using Git, facilitating efficient team collaboration."
+      ],
+      "technologies" : ["HTML","CSS","JS","Polymer3.js","Material UI"]
+
+    },
+    {
+      "title": "Infosys",
+      "subTitle": "MERN developer (Internship)",
+      "from": "01/2019",
+      "to": "06/2019",
+      "achievement": [
+        "Developed Salesman quotation web app using MERN.",
+        "Designed and developed back-end using Express.js, Node.js, and MongoDB.",
+        "Determined the structure and design of web pages based on user requirements and balanced functional & aesthetic designs.",
+        "Developed custom card view to show the customer quotation request.",
+        "Used REDUX to store global variables.",
+        "Developed approval flow for quotation, where all quotations go for manager approval."
+      ],
+      "technologies" : ["HTML","CSS","JS","React.js","node.js", "MangoDB", "express.js"]
+
+    }
+  ]
+  

@@ -1,0 +1,19 @@
+.badge{
+    margin: 5px;
+}
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .badge {
+      font-size: 12px; /* Adjust font size for medium screens */
+      padding: 2px 6px; /* Adjust padding for medium screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .badge {
+      font-size: 10px; /* Adjust font size for smaller screens */
+      padding: 2px 4px; /* Adjust padding for smaller screens */
+    }
+  }
+  
