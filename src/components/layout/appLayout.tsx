@@ -43,7 +43,7 @@ const AppLayout = () => {
   }, []);
 
   const defaultSelectedKey = Object.keys(menuDetail).find(
-    (key) => menuDetail[key] === (location.pathname == "/" ? "/": location.pathname.replace("/", ""))
+    (key) => menuDetail[key] === (location.pathname === "/" ? "/": location.pathname.replace("/", ""))
   );
 
   return (
