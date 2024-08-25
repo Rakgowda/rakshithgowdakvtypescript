@@ -1,1 +1,0 @@
-export const ownerName = 'RakshithgowdA K V'
