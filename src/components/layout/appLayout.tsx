@@ -26,11 +26,6 @@ const AppLayout = () => {
   const navigate = useNavigate();
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
-  const items = new Array(3).fill(null).map((_, index) => ({
-    key: index + 1,
-    label: `nav ${index + 1}`,
-  }));
-
   const handleMenuClick = (e: MenuInfo) => {
     navigate(menuDetail[e.key]);
   };
