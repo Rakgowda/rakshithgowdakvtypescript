@@ -46,3 +46,17 @@
     font-size: 18px;
   }
 }
+
+.header-nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0px;
+  z-index: 9999;
+  width: 100%;
+}
+
+.header-nav ul{
+  justify-content: center;
+}
