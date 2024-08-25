@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e8b4db4f.css",
+    "main.js": "/static/js/main.86c4ed53.js",
+    "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
+    "static/media/corona.jpg": "/static/media/corona.02a570313f889a76fe2f.jpg",
+    "static/media/rakshithgowdakv.png": "/static/media/rakshithgowdakv.23091d90b3f4a596e5c1.png",
+    "static/media/bank.png": "/static/media/bank.90efe0eee7c55fba546a.png",
+    "static/media/b2b.jpg": "/static/media/b2b.ab7d28ba161bd0787b62.jpg",
+    "static/media/salesman.png": "/static/media/salesman.1abd31f56758a248293a.png",
+    "static/media/GST-Bill-of-Supply.jpg": "/static/media/GST-Bill-of-Supply.103b18b92ff24541ca8b.jpg",
+    "index.html": "/index.html",
+    "main.e8b4db4f.css.map": "/static/css/main.e8b4db4f.css.map",
+    "main.86c4ed53.js.map": "/static/js/main.86c4ed53.js.map",
+    "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e8b4db4f.css",
+    "static/js/main.86c4ed53.js"
+  ]
+}
