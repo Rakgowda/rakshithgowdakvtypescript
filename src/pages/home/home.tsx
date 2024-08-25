@@ -1,4 +1,4 @@
-import { Col, Flex, Image, List, Row } from "antd";
+import { Col, Flex, Image, Row } from "antd";
 import { ownerName } from "../../components/util/constant";
 import "./home.css";
 import profilePic from "../../image/rakshithgowdakv.png";
