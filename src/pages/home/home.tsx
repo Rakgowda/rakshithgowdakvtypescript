@@ -53,16 +53,43 @@ const Home = () => {
               Hello! I'm <span id="ownerName">{ownerName}</span>, Senior
               Software Engineer with 5 years of expertise in full-stack
               development, specializing in React.js, Redux, and Java-based
-              RESTful APIs. Proven ability to lead cross-functional teams,
-              drive process improvements, and mentor junior engineers.
-              Passionate about leveraging cutting-edge technologies to solve
-              complex problems and deliver high-quality software solutions.
+              RESTful APIs. Proven ability to lead cross-functional teams, drive
+              process improvements, and mentor junior engineers. Passionate
+              about leveraging cutting-edge technologies to solve complex
+              problems and deliver high-quality software solutions.
             </div>
             <div className="social-icons">
-              <MailOutlined className="connectIcon" href="" />
-              <LinkedinOutlined className="connectIcon" href="https://www.linkedin.com/in/rakshithgowda-kv/" target="_blank"/>
-              <GithubOutlined className="connectIcon" href="" />
-              <WhatsAppOutlined className="connectIcon" href="" />
+              <a
+                href="mailto:rakshithgowdakv@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-media-icon"
+              >
+                <MailOutlined className="connectIcon" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/rakshithgowda-kv/"
+                target="_blank"
+                className="social-media-icon"
+              >
+                <LinkedinOutlined className="connectIcon" />
+              </a>
+              <a
+                href="https://github.com/Rakgowda"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-media-icon"
+              >
+                <GithubOutlined className="connectIcon" />
+              </a>
+              <a
+                href="https://wa.me/7026906475"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-media-icon"
+              >
+                <WhatsAppOutlined className="connectIcon" />
+              </a>
             </div>
           </div>
         </Col>

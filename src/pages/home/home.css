@@ -26,6 +26,16 @@
   padding: 20px;
 }
 
+.social-media-icon{
+  color: black;
+}
+
+.social-media-icon :hover{
+  color: var(--primary);
+  scale: 1.09;
+  transition: 1s ease;
+}
+
 @media (max-width: 768px) {
   .connectIcon {
     font-size: 18px;
