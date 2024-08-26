@@ -6,6 +6,8 @@ import "./projectStyle.css";
 
 const Project = () => {
   return (
+    <>
+    <h1 className="pageTile">Projects</h1>
     <div className="project-container">
       <Row gutter={16} justify="center">
         {projectData.map((project) => (
@@ -33,6 +35,8 @@ const Project = () => {
         ))}
       </Row>
     </div>
+    </>
+    
   );
 };
 

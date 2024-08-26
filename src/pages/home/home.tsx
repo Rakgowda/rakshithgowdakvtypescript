@@ -59,10 +59,10 @@ const Home = () => {
               complex problems and deliver high-quality software solutions.
             </div>
             <div className="social-icons">
-              <MailOutlined className="connectIcon" />
-              <LinkedinOutlined className="connectIcon" />
-              <GithubOutlined className="connectIcon" />
-              <WhatsAppOutlined className="connectIcon" />
+              <MailOutlined className="connectIcon" href="" />
+              <LinkedinOutlined className="connectIcon" href="https://www.linkedin.com/in/rakshithgowda-kv/" target="_blank"/>
+              <GithubOutlined className="connectIcon" href="" />
+              <WhatsAppOutlined className="connectIcon" href="" />
             </div>
           </div>
         </Col>

@@ -3,10 +3,7 @@
   width: 200px !important;
   height: 200px !important;
 }
-.home-col {
-  display: flex;
-  justify-content: center;
-}
+
 #ownerName {
   font-weight: bold;
 }
@@ -51,6 +48,11 @@
     display: flex;
     justify-content: center;
     margin-top: 10px;
+  }
+
+  .home-col {
+    display: flex;
+    justify-content: center;
   }
 
   #profileId {
