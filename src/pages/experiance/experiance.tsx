@@ -14,14 +14,11 @@ const Experiance = () => {
     from: string,
     to: string
   ): { years: number; months: number } => {
-
     const [fromMonth, fromYear] = from.split("/").map(Number);
-    const [toMonth, toYear] = to != "present" ? to.split("/").map(Number) : [] ;
-        // Create Date objects using the parsed values (using the first day of the month)
-        const startDate = new Date(fromYear, fromMonth - 1);
-        const endDate = to == "present" ?  new Date() : new Date(toYear, toMonth - 1);
-    // const startDate = new Date(from);
-    // const endDate = to == "present" ? new Date() :new Date(to);
+    const [toMonth, toYear] = to !== "present" ? to.split("/").map(Number) : [];
+    const startDate = new Date(fromYear, fromMonth - 1);
+    const endDate =
+      to === "present" ? new Date() : new Date(toYear, toMonth - 1);
     let totalMonths = (endDate.getFullYear() - startDate.getFullYear()) * 12;
     totalMonths += endDate.getMonth() - startDate.getMonth();
 
@@ -46,7 +43,11 @@ const Experiance = () => {
                   </div>
                   <div>
                     <b>Experience : </b>
-                    <span>{`${getExperience(job.from,job.to).years} years and ${getExperience(job.from,job.to).months} months`}</span>
+                    <span>{`${
+                      getExperience(job.from, job.to).years
+                    } years and ${
+                      getExperience(job.from, job.to).months
+                    } months`}</span>
                   </div>
                   <div>
                     <b>From : </b>
