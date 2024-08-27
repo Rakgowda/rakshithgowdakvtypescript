@@ -70,6 +70,7 @@ const Home = () => {
               <a
                 href="https://www.linkedin.com/in/rakshithgowda-kv/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="social-media-icon"
               >
                 <LinkedinOutlined className="connectIcon" />
