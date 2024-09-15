@@ -6,7 +6,7 @@ import jobExperience from "./job-data.json";
 const Experiance = () => {
   const actions = (technologies: string[]): React.ReactNode[] => {
     return technologies.map((tech, i) => (
-      <Badge key={i} count={tech} className="badge" color="var(--primary)" />
+      <Badge data-testid={"react-js-label-"+tech.toLowerCase()+i} key={i} count={tech} className="badge" color="var(--primary)" />
     ));
   };
 

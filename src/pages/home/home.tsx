@@ -10,8 +10,9 @@ import {
   WhatsAppOutlined,
 } from "@ant-design/icons";
 import { skillList } from "./homeType";
+import React from "react";
 
-const Home = () => {
+const Home : React.FC = () =>  {
   const frontEndCore: skillList = ["HTML", "CSS", "JavaScript", "TypeScript"];
   const FrontEndlibrariesAndFrameworks: skillList = [
     "React.js",
@@ -64,6 +65,7 @@ const Home = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-media-icon"
+                aria-label ="Gmail"
               >
                 <MailOutlined className="connectIcon" />
               </a>
@@ -72,6 +74,7 @@ const Home = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-media-icon"
+                aria-label ="LinkedIn"
               >
                 <LinkedinOutlined className="connectIcon" />
               </a>
@@ -80,6 +83,7 @@ const Home = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-media-icon"
+                aria-label ="GitHub"
               >
                 <GithubOutlined className="connectIcon" />
               </a>
@@ -88,6 +92,7 @@ const Home = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-media-icon"
+                aria-label ="Whatsapp"
               >
                 <WhatsAppOutlined className="connectIcon" />
               </a>

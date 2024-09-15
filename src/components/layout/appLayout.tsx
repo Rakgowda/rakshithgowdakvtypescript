@@ -2,6 +2,7 @@ import React, { Suspense, useState } from "react";
 import "./appLayout.css";
 import { Layout, Menu, Spin, Typography } from "antd";
 import {
+  DownloadOutlined,
   FormatPainterOutlined,
   FundProjectionScreenOutlined,
   HomeOutlined,
@@ -12,6 +13,7 @@ import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import type { MenuInfo } from "rc-menu/lib/interface";
 import { MenuDetail } from "./appLayoutType";
 
+import resumePDF from "../../pdf/RakshithgowdaKV.pdf";
 const { Header, Sider, Content } = Layout;
 const { Title } = Typography;
 
@@ -19,6 +21,7 @@ const menuDetail: MenuDetail = {
   "1": "/",
   "2": "Jobexperiance",
   "3": "project",
+  "4": "resume"
 };
 
 const AppLayout = () => {
@@ -28,7 +31,18 @@ const AppLayout = () => {
   const location = useLocation();
 
   const handleMenuClick = (e: MenuInfo) => {
-    navigate(menuDetail[e.key]);
+    if (e.key === "4") {
+      // Create a temporary link to download the PDF
+      const link = document.createElement("a");
+      link.href = resumePDF;
+      link.download = "RakshithgowdaKV.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } else {
+      // For other menu items, navigate to the corresponding page
+      navigate(menuDetail[e.key]);
+    }
   };
 
   const handleResize = () => {
@@ -69,6 +83,10 @@ const AppLayout = () => {
                 key: "3",
                 icon: <FundProjectionScreenOutlined />,
               },
+              {
+                key : "4",
+                icon : <DownloadOutlined />
+              }
             ]}
             style={{ flex: 1, minWidth: 0 }}
           />
@@ -103,6 +121,11 @@ const AppLayout = () => {
                 icon: <FundProjectionScreenOutlined />,
                 label: "Project",
               },
+              {
+                key : "4",
+                icon : <DownloadOutlined />,
+                label: "Resume",
+              }
             ]}
           />
         </Sider>

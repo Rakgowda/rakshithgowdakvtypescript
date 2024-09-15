@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Badge, Button, Modal } from "antd";
-type modalPopupProp = {
+export type modalPopupProp = {
   title: string;
   description: string[];
   link?: string;
