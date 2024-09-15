@@ -15,11 +15,11 @@
   },
   {
     "project": "E-Banking Website",
-    "overview": "Developing E-Banking web application using Polymer.js and Materialize CSS",
+    "overview": "Developing E-Banking web application using React.js and Materialize CSS",
     "imgSrc": "bank.png",
     "description": [
-      "Developing E-Banking web application using Polymer.js andMaterialize CSS.",
-      "Identified web-based user interactions and developed highly responsive user interface components via polymer concepts",
+      "Developing E-Banking web application using React.js andMaterialize CSS.",
+      "Identified web-based user interactions and developed highly responsive user interface components",
       "Developed custom switch component to select different payment type",
       "Fixed bugs from existing website and implemented enhancements that significantly improved web functionality and speed."
     ]
